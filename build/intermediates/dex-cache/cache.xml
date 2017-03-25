@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="983e2f375504bc04def18e709c35192afe92e65f">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.1.0_71257f6953babf4372501940c4f123b6803f1c55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2dd27d04a7e2bf9b92f1f12508164cd95144a7f1">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d2ebe36a61faba6cc61ab5644f73edbe691e311a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.3.2\d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27\picasso-2.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.3.2_1c8415cdc084b15e9b7a1c62801fad22ad77c47a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.0_b0909bfafc2bf36adb00b24ac986e6c4611a36c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d5d9d13074e9de9805fbe49bbe14f1525d6b1779">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_caa51da3ebd94bdb9cb2e5fa45c39b31a43b517b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.1.0_554d431701a89643a260fad2ceb30295f64f56dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="80434c45861675a57d690fba5ca31c3d55c89489">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-22.1.0_6ea5fb3b2abf611915c8ea9fe34b3c1b5f5191d4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="7187d07cb95185345d8259622bb6ae0957bbd3f4">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d07351acb1f981b23c9f4a1622f390f9b7c9d03e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\jars\libs\internal_impl-22.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.1.0_cab2f64667dc6309b655a8aab49d692f380b6673\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="80434c45861675a57d690fba5ca31c3d55c89489">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-22.1.0_71deebe14649fdb2f0564d3a04921c9e4fdc4618\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.1.0_ccb440a64fb1a6607c77feaaf19f28dfcb7ca5f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b8403455230db4504cbb03c8dec9b0ab1c6dbb02">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0637f0024bd69de630831c7725cf9b09dc646369\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\jars\libs\internal_impl-22.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.1.0_aa0475683e7b098c1c87f8754cda6638c473c806\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.0\support-annotations-22.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="281bc6c58ecb3644c23fbc5ee0452019f67b4d5d">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\AndroidStudioProjects\23_HTTPBackgroundTasks\PhotoGallery\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.1.0_4fb6821266b503949170693969252ceeab4745f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="983e2f375504bc04def18e709c35192afe92e65f">
+        <dex dex="C:\Users\panwa.DESKTOP-E41QAKN\Desktop\MiniFlickr\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.1.0_7204b41e3518163f4cca67bd8ed100f1d7bb9cde\classes.dex" />
+    </item>
+
+</items>
