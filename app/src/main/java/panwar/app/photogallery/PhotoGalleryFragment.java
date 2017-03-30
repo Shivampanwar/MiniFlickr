@@ -5,8 +5,12 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -27,12 +31,57 @@ public class PhotoGalleryFragment extends Fragment {
     public static PhotoGalleryFragment newInstance() {
         return new PhotoGalleryFragment();
     }
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater menuInflater) {
+        super.onCreateOptionsMenu(menu, menuInflater);
+        menuInflater.inflate(R.menu.fragment_photo_gallery, menu);
+        MenuItem searchItem = menu.findItem(R.id.menu_item_search);
+        final SearchView searchView = (SearchView) searchItem.getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                Log.d(TAG, "QueryTextSubmit: " + s);
+                QueryPreferences.setStoredQuery(getActivity(), s);
+                updateItems();
+                return true;
+            }
+            @Override
+            public boolean onQueryTextChange(String s) {
+                Log.d(TAG, "QueryTextChange: " + s);
+                return false;
+            }
+        });
+        searchView.setOnSearchClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String query = QueryPreferences.getStoredQuery(getActivity());
+                searchView.setQuery(query, false);
+            }
+        });
+    }
+    private void updateItems() {
+        String query = QueryPreferences.getStoredQuery(getActivity());
+        new FetchItemsTask(query).execute();
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_item_clear:
+                QueryPreferences.setStoredQuery(getActivity(), null);
+                updateItems();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
-        new FetchItemsTask().execute();
+        setHasOptionsMenu(true);
+       // new FetchItemsTask().execute();
+    updateItems();
     }
 
     @Override
@@ -50,8 +99,7 @@ public class PhotoGalleryFragment extends Fragment {
                 GridLayoutManager layoutManager = (GridLayoutManager)recyclerView.getLayoutManager();
                 int loadBufferPosition = 1;
                 if(lastPosition >= adapter.getItemCount() - layoutManager.getSpanCount()- loadBufferPosition){
-                    new FetchItemsTask().execute(lastPosition
-                    +1);
+                    new FetchItemsTask(QueryPreferences.getStoredQuery(getActivity())).execute(lastPosition+1);
                 }
             }
 
@@ -126,9 +174,20 @@ public class PhotoGalleryFragment extends Fragment {
 
     private class FetchItemsTask extends AsyncTask<Integer,Void,List<GalleryItem>> {
 
-        @Override
+        private String mQuery;
+        public FetchItemsTask(String query) {
+            mQuery = query;
+        }
+       // public  FetchItemsTask(){};
+        //@Override
         protected List<GalleryItem> doInBackground(Integer... params) {
-            return new FlickrFetchr().fetchItems(lastFetchedPage);
+            //return new FlickrFetchr().fetchItems(lastFetchedPage);
+
+            if (mQuery == null) {
+                return new FlickrFetchr().fetchRecentPhotos(lastFetchedPage);
+            } else {
+                return new FlickrFetchr().searchPhotos(mQuery,lastFetchedPage);
+            }
         }
 
         @Override
@@ -145,5 +204,6 @@ public class PhotoGalleryFragment extends Fragment {
         }
 
     }
+
 
 }
