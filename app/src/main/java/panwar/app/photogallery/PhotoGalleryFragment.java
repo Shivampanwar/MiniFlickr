@@ -1,5 +1,6 @@
 package panwar.app.photogallery;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -24,7 +25,7 @@ import java.util.List;
 public class PhotoGalleryFragment extends Fragment {
 
     private static final String TAG = "PhotoGalleryFragment";
-    private int lastFetchedPage = 1;
+    public static int lastFetchedPage = 1;
     private RecyclerView mPhotoRecyclerView;
     private List<GalleryItem> mItems = new ArrayList<>();
 
@@ -58,6 +59,12 @@ public class PhotoGalleryFragment extends Fragment {
                 searchView.setQuery(query, false);
             }
         });
+        MenuItem toggleItem = menu.findItem(R.id.menu_item_toggle_polling);
+        if (PollService.isServiceAlarmOn(getActivity())) {
+            toggleItem.setTitle(R.string.stop_polling);
+        } else {
+            toggleItem.setTitle(R.string.start_polling);
+        }
     }
     private void updateItems() {
         String query = QueryPreferences.getStoredQuery(getActivity());
@@ -71,6 +78,11 @@ public class PhotoGalleryFragment extends Fragment {
                 QueryPreferences.setStoredQuery(getActivity(), null);
                 updateItems();
                 return true;
+            case R.id.menu_item_toggle_polling:
+                boolean shouldStartAlarm = !PollService.isServiceAlarmOn(getActivity());
+                PollService.setServiceAlarm(getActivity(), shouldStartAlarm);
+                getActivity().invalidateOptionsMenu();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -82,6 +94,9 @@ public class PhotoGalleryFragment extends Fragment {
         setHasOptionsMenu(true);
        // new FetchItemsTask().execute();
     updateItems();
+       // Intent i=PollService.newIntent(getActivity());
+        //getActivity().startService(i);
+      //  PollService.setServiceAlarm(getActivity(), true);
     }
 
     @Override
